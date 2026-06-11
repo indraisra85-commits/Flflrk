@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belajar Mengikhlaskan</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#0f172a,#1e293b,#334155,#475569);
+    background-size:400% 400%;
+    animation:bgMove 12s ease infinite;
+    overflow:hidden;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    width:90%;
+    max-width:800px;
+    padding:40px;
+    text-align:center;
+    color:white;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    border-radius:25px;
+    box-shadow:0 0 30px rgba(255,255,255,0.1);
+    animation:fadeIn 2s ease;
+}
+
+h1{
+    color:#f8c8dc;
+    margin-bottom:20px;
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{ text-shadow:0 0 10px #f8c8dc; }
+    to{ text-shadow:0 0 25px #ffffff; }
+}
+
+.message{
+    font-size:20px;
+    line-height:1.8;
+    opacity:0;
+    animation:showText 4s forwards;
+    animation-delay:1s;
+}
+
+@keyframes showText{
+    to{
+        opacity:1;
+    }
+}
+
+.heart{
+    font-size:60px;
+    margin-bottom:15px;
+    animation:heartbeat 2s infinite;
+}
+
+@keyframes heartbeat{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+.footer{
+    margin-top:25px;
+    font-style:italic;
+    color:#dbeafe;
+    opacity:0;
+    animation:showText 4s forwards;
+    animation-delay:3s;
+}
+
+.star{
+    position:absolute;
+    width:4px;
+    height:4px;
+    background:white;
+    border-radius:50%;
+    animation:twinkle 3s infinite;
+}
+
+@keyframes twinkle{
+    0%,100%{
+        opacity:0.2;
+    }
+    50%{
+        opacity:1;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="star" style="top:10%;left:20%;"></div>
+<div class="star" style="top:25%;left:80%;"></div>
+<div class="star" style="top:70%;left:15%;"></div>
+<div class="star" style="top:85%;left:75%;"></div>
+<div class="star" style="top:40%;left:50%;"></div>
+
+<div class="container">
+
+    <div class="heart">💔</div>
+
+    <h1>Menerima dengan Ikhlas</h1>
+
+    <div class="message">
+        Aku pernah menyimpan harapan bahwa suatu hari
+        perasaanku akan menemukan tempat di hatimu.
+        Aku mencoba menjaga perasaan itu dengan tulus,
+        meski tak pernah memaksamu untuk membalasnya.
+        <br><br>
+        Hari ini aku memahami bahwa tidak semua cinta
+        harus berakhir dengan memiliki.
+        Cintaku mungkin ditolak,
+        tetapi aku memilih menerimanya dengan ikhlas.
+        <br><br>
+        Terima kasih karena pernah menjadi alasan
+        hadirnya banyak senyum dalam hidupku.
+        Aku tidak menyesali perasaan ini,
+        karena mencintaimu dengan tulus adalah hal yang indah.
+        <br><br>
+        Kini aku melepaskan semua harapan yang tersisa,
+        bukan karena berhenti peduli,
+        melainkan karena aku menghargai kebahagiaanmu.
+        Semoga hidupmu selalu dipenuhi kebahagiaan,
+        meski pada akhirnya aku bukan orang yang berdiri di sisimu.
+    </div>
+
+    <div class="footer">
+        "Tidak semua kisah cinta ditakdirkan untuk bersama,
+        tetapi setiap cinta yang tulus akan selalu memiliki maknanya."
+    </div>
+
+</div>
+
+</body>
+</html>
